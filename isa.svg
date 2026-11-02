@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-label="Hurma ağacı ve parlayan bir ışık">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f5d9b5"/><stop offset="1" stop-color="#d88f6a"/></linearGradient>
+    <radialGradient id="s" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff7e0"/><stop offset="1" stop-color="#fff7e0" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="320" height="180" fill="url(#g)"/>
+  <circle cx="226" cy="58" r="46" fill="url(#s)"/>
+  <circle cx="226" cy="58" r="10" fill="#fffaf0"/>
+  <path d="M0 150 Q80 132 160 146 T320 140 V180 H0z" fill="#b8683f"/>
+  <path d="M112 150 C114 120 118 96 126 70" stroke="#6f4a2e" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <g fill="#3d7a52">
+    <path d="M126 70 C104 60 86 64 72 78 C92 72 108 72 126 70z"/>
+    <path d="M126 70 C112 50 94 44 78 48 C98 54 112 60 126 70z"/>
+    <path d="M126 70 C130 48 144 36 160 34 C146 46 136 56 126 70z"/>
+    <path d="M126 70 C146 58 166 60 178 72 C160 68 144 68 126 70z"/>
+    <path d="M126 70 C140 76 152 88 156 102 C144 92 134 82 126 70z"/>
+  </g>
+  <g fill="#8a3f22"><circle cx="122" cy="80" r="3.2"/><circle cx="129" cy="82" r="3.2"/><circle cx="125" cy="87" r="3.2"/></g>
+</svg>

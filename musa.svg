@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-label="Nil sazlıkları arasında yüzen bir sandık ve uzakta bir saray kapısı">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6d9a8"/><stop offset="1" stop-color="#e9b77a"/></linearGradient>
+    <linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3c8c9a"/><stop offset="1" stop-color="#1f5f72"/></linearGradient>
+  </defs>
+  <rect width="320" height="180" fill="url(#g)"/>
+  <circle cx="72" cy="44" r="18" fill="#fff6e3" fill-opacity=".9"/>
+  <g fill="#c48a52" opacity=".85">
+    <path d="M200 98 L206 52 L238 52 L244 98 Z"/>
+    <path d="M250 98 L256 52 L288 52 L294 98 Z"/>
+    <rect x="240" y="66" width="12" height="32"/>
+    <rect x="198" y="46" width="98" height="8" rx="2"/>
+  </g>
+  <rect x="0" y="98" width="320" height="82" fill="url(#w)"/>
+  <g fill="none" stroke="#bfe3e6" stroke-opacity=".5" stroke-width="2" stroke-linecap="round">
+    <path d="M20 120 q20 -6 40 0 t40 0"/><path d="M180 140 q20 -6 40 0 t40 0"/><path d="M90 160 q20 -6 40 0 t40 0"/>
+  </g>
+  <g transform="translate(128 118)">
+    <path d="M0 10 h52 l-6 14 h-40 z" fill="#8a5a33"/>
+    <rect x="4" y="4" width="44" height="8" rx="2" fill="#a8743f"/>
+  </g>
+  <g stroke="#4f7a3a" stroke-width="3" stroke-linecap="round">
+    <path d="M18 178 V112"/><path d="M28 178 V104"/><path d="M38 178 V118"/><path d="M290 178 V110"/><path d="M302 178 V100"/>
+  </g>
+  <g fill="#6d9b4e"><ellipse cx="28" cy="102" rx="5" ry="10"/><ellipse cx="18" cy="110" rx="4" ry="8"/><ellipse cx="302" cy="98" rx="5" ry="10"/><ellipse cx="290" cy="108" rx="4" ry="8"/></g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-label="Dalgalar üzerinde bir gemi gövdesi">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a5d86"/><stop offset="1" stop-color="#9fb3cf"/></linearGradient>
+  </defs>
+  <rect width="320" height="180" fill="url(#g)"/>
+  <g fill="#fff" fill-opacity=".14"><circle cx="70" cy="40" r="28"/><circle cx="104" cy="36" r="20"/><circle cx="230" cy="30" r="24"/><circle cx="262" cy="38" r="16"/></g>
+  <g stroke="#fff" stroke-opacity=".25" stroke-width="1.2"><path d="M40 10 l-8 30M80 0 l-8 30M200 4 l-8 30M250 0 l-8 30M290 8 l-8 30"/></g>
+  <path d="M96 104 h128 l-16 26 h-96z" fill="#7a5233"/>
+  <rect x="128" y="86" width="64" height="18" rx="3" fill="#a87447"/>
+  <path d="M0 128 Q20 116 40 128 T80 128 T120 128 T160 128 T200 128 T240 128 T280 128 T320 128 V180 H0z" fill="#2f4f7f"/>
+  <path d="M0 146 Q20 134 40 146 T80 146 T120 146 T160 146 T200 146 T240 146 T280 146 T320 146 V180 H0z" fill="#22406c"/>
+  <path d="M0 164 Q20 152 40 164 T80 164 T120 164 T160 164 T200 164 T240 164 T280 164 T320 164 V180 H0z" fill="#183356"/>
+</svg>

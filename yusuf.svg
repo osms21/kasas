@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-label="On bir yıldız, güneş ve ay; aşağıda bir kuyu">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2350"/><stop offset="1" stop-color="#6b4f8a"/></linearGradient>
+    <radialGradient id="w" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#0d0a1f"/><stop offset="1" stop-color="#3a2c5c"/></radialGradient>
+  </defs>
+  <rect width="320" height="180" fill="url(#g)"/>
+  <g fill="#fbe9b7">
+    <circle cx="40" cy="30" r="2.2"/><circle cx="70" cy="56" r="1.8"/><circle cx="96" cy="24" r="2.4"/><circle cx="120" cy="48" r="1.6"/>
+    <circle cx="146" cy="20" r="2"/><circle cx="174" cy="40" r="2.2"/><circle cx="200" cy="18" r="1.8"/><circle cx="226" cy="46" r="2"/>
+    <circle cx="276" cy="26" r="2.2"/><circle cx="296" cy="58" r="1.6"/><circle cx="56" cy="80" r="1.8"/>
+  </g>
+  <circle cx="252" cy="88" r="13" fill="#f6c453"/>
+  <path d="M96 74 a12 12 0 1 0 0 22 a9 9 0 1 1 0 -22z" fill="#f3ead2"/>
+  <ellipse cx="160" cy="150" rx="58" ry="18" fill="#b9a3d6"/>
+  <ellipse cx="160" cy="148" rx="46" ry="12" fill="url(#w)"/>
+  <path d="M160 110 v38" stroke="#e9dcc2" stroke-width="2"/>
+</svg>
