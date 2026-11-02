@@ -414,6 +414,144 @@ a.btn { color: var(--ink); } a.btn.primary { color: var(--accent-ink); }
   .toplink { padding: 5px 10px; font-size: .8rem; }
 }
 
+/* ---------- çalışmam ---------- */
+.top-in { flex-wrap: nowrap; }
+.muted { color: var(--muted); }
+.small { font-size: .85rem; }
+.resume { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin: 4px 0 16px; padding: 10px 14px; background: var(--accent-soft); border: 1px solid var(--line); border-radius: var(--radius); color: var(--ink); text-decoration: none; font-size: .92rem; }
+.resume .go { color: var(--accent); font-weight: 600; white-space: nowrap; }
+.resume:hover { border-color: var(--accent); }
+.dash-last { display: flex; gap: 14px; align-items: center; margin: 6px 0 14px; }
+.dash-last img { width: 112px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 10px; flex: none; }
+.dl-title { font-weight: 600; margin: 2px 0; }
+.dash-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 8px 0 12px; }
+.dash-stats > div { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; display: flex; flex-direction: column; }
+.dash-stats b { font-family: var(--f-display); font-size: 1.6rem; line-height: 1.1; color: var(--accent); }
+.dash-stats span { font-size: .82rem; color: var(--muted); }
+.progress.big { height: 10px; }
+.dash-rows { display: grid; gap: 10px; }
+.dash-row { border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px; background: var(--bg); }
+.dr-name { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.dr-name .kufi { color: var(--accent); font-size: 1.1rem; }
+.dr-name .badge { margin-left: auto; }
+.dr-meta { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-top: 6px; font-size: .85rem; color: var(--muted); }
+.dr-meta a { color: var(--accent); font-weight: 600; text-decoration: none; }
+.dash-warn { background: var(--gold-soft); color: var(--ink); border-radius: 10px; padding: 8px 12px; font-size: .9rem; margin: 0 0 12px; }
+.cta-row.left { justify-content: flex-start; }
+label.btn { cursor: pointer; display: inline-block; }
+.dash-import { margin-top: 14px; border: 1px dashed var(--accent); border-radius: 12px; padding: 12px 14px; }
+.dash-import p { margin: 0 0 6px; }
+@media (max-width: 640px) {
+  .dash-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .dash-last img { width: 84px; }
+  .top-in { gap: 6px; }
+  .brand b { display: none; }
+}
+a.btn { text-decoration: none; }
+
+/* ---------- tekrar ---------- */
+.tl-badge { display: inline-grid; place-items: center; min-width: 18px; height: 18px; padding: 0 5px; margin-left: 6px; border-radius: 999px; background: var(--gold); color: #fff; font-size: .72rem; font-weight: 700; }
+.resume.rv { background: var(--gold-soft); }
+.rv-banner { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; background: var(--gold-soft); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 14px; margin: 0 0 16px; }
+.rv-banner .rv-hint { color: var(--muted); font-size: .85rem; margin-top: 2px; }
+.rv-banner .cta-row { margin: 0; }
+.rv-list { display: grid; gap: 8px; }
+.rv-item { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; padding: 9px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--ink); text-decoration: none; font-size: .92rem; }
+.rv-item.due { border-color: var(--gold); background: var(--gold-soft); }
+.rv-item:hover { border-color: var(--accent); }
+.rv-meta { color: var(--muted); font-size: .82rem; white-space: nowrap; }
+.rv-none { margin: 0; color: var(--ok); font-weight: 600; }
+.rv-soon { margin-top: 10px; }
+.rv-soon summary { cursor: pointer; font-weight: 600; font-size: .92rem; margin-bottom: 8px; }
+
+/* ---------- kelime defteri ---------- */
+.pop-foot { margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--line); }
+.star-btn { border: 1px solid var(--line); background: var(--card); border-radius: 999px; padding: 5px 12px; font-size: .85rem; font-weight: 600; color: var(--ink); }
+.star-btn.on { background: var(--gold-soft); border-color: var(--gold); color: var(--gold); }
+.w-tools { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 14px; }
+.w-tools input[type=search] { flex: 1 1 220px; min-width: 0; padding: 9px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--card); color: var(--ink); font: inherit; }
+.w-tools select { padding: 9px 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--card); color: var(--ink); font: inherit; }
+.w-list { display: grid; gap: 10px; }
+.w-item { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; }
+.w-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.w-head .spacer { flex: 1; }
+.w-ar { font-size: 1.6rem; color: var(--accent); line-height: 1.5; }
+.w-tr { margin: 2px 0 0; }
+.w-ctx { margin-top: 8px; border-top: 1px dashed var(--line); padding-top: 8px; }
+.w-ctx .ar, .w-card-ctx { font-size: 1.15rem; line-height: 1.9; margin: 0; }
+.w-ctx mark, .w-card-ctx mark { background: var(--gold-soft); color: inherit; border-radius: 4px; padding: 0 2px; }
+.w-src { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; font-size: .82rem; color: var(--muted); margin-top: 4px; }
+.w-src a { color: var(--accent); font-weight: 600; text-decoration: none; }
+.w-box { display: inline-flex; gap: 3px; }
+.w-box i { width: 8px; height: 8px; border-radius: 50%; background: var(--line); }
+.w-box i.on { background: var(--ok); }
+.w-card { border-color: var(--accent); }
+.w-card-top { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.w-card-top .btn { margin-left: auto; }
+.w-front { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 10px 0; }
+.w-front .ar { font-size: 2.4rem; color: var(--accent); line-height: 1.5; }
+.w-card-ctx { text-align: center; color: var(--muted); margin-bottom: 10px; }
+.w-back { text-align: center; background: var(--bg); border-radius: 12px; padding: 12px; margin: 6px 0; }
+.w-back .w-tr { font-size: 1.1rem; font-weight: 600; }
+.w-grade { justify-content: center; }
+.w-how { margin: 0 0 14px; padding-left: 20px; }
+.w-how li { margin: 4px 0; }
+
+/* ---------- takvim ---------- */
+.cal-wrap { display: grid; grid-template-columns: auto 1fr; column-gap: 6px; max-width: 560px; }
+.cal-days { display: grid; grid-template-rows: repeat(7, 1fr); gap: 3px; font-size: .68rem; color: var(--muted); }
+.cal-days span { line-height: 1; display: flex; align-items: center; }
+.cal-months { display: grid; gap: 3px; font-size: .68rem; color: var(--muted); margin-bottom: 3px; }
+.cal-months span { white-space: nowrap; overflow: visible; }
+.cal { display: grid; grid-template-rows: repeat(7, auto); grid-auto-flow: column; gap: 3px; }
+.c { display: block; aspect-ratio: 1; border-radius: 3px; background: var(--bg); border: 1px solid var(--line); min-width: 9px; }
+.c.l1 { background: color-mix(in srgb, var(--ok) 30%, var(--card)); border-color: transparent; }
+.c.l2 { background: color-mix(in srgb, var(--ok) 55%, var(--card)); border-color: transparent; }
+.c.l3 { background: color-mix(in srgb, var(--ok) 78%, var(--card)); border-color: transparent; }
+.c.l4 { background: var(--ok); border-color: transparent; }
+.c.lx { visibility: hidden; }
+.c.today { outline: 2px solid var(--gold); outline-offset: 1px; }
+.cal-legend { display: flex; align-items: center; justify-content: flex-start; max-width: 560px; gap: 3px; font-size: .72rem; color: var(--muted); margin-top: 6px; }
+.cal-legend .c { width: 11px; min-width: 11px; }
+.dash-stats b small { font-size: .9rem; color: var(--muted); }
+
+/* ---------- öz değerlendirme ---------- */
+.self-card .self-lv { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+.self-card .self-lv .opt { flex: 1 1 140px; justify-content: center; }
+.self-can { display: grid; gap: 6px; margin-bottom: 10px; }
+.self-can label { display: flex; gap: 8px; align-items: flex-start; cursor: pointer; font-size: .95rem; }
+.self-can input { margin-top: 4px; accent-color: var(--accent); width: 16px; height: 16px; flex: none; }
+.self-card textarea { width: 100%; min-height: 60px; }
+
+/* ---------- haftalık hedef ---------- */
+.goal-form { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; margin-bottom: 4px; }
+.goal-form label { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: .92rem; }
+.goal-form select { padding: 7px 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--card); color: var(--ink); font: inherit; }
+.stepper { display: inline-flex; align-items: center; gap: 8px; }
+.stepper b { min-width: 1.5em; text-align: center; font-family: var(--f-display); font-size: 1.2rem; }
+.goal-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.ring { width: 84px; height: 84px; flex: none; }
+.ring-bg { fill: none; stroke: var(--bg); stroke-width: 9; }
+.ring-fg { fill: none; stroke: var(--accent); stroke-width: 9; stroke-linecap: round; transition: stroke-dasharray .4s; }
+.ring-fg.full { stroke: var(--ok); }
+.goal-txt { flex: 1; min-width: 180px; }
+.goal-big { font-size: 1.05rem; } .goal-big b { font-family: var(--f-display); font-size: 1.7rem; color: var(--accent); }
+.goal-hist { display: flex; align-items: center; gap: 4px; margin-top: 8px; flex-wrap: wrap; }
+.goal-hist .muted { margin-right: 4px; }
+.gh { width: 14px; height: 14px; border-radius: 4px; background: var(--bg); border: 1px solid var(--line); }
+.gh.part { background: color-mix(in srgb, var(--accent) 35%, var(--card)); border-color: transparent; }
+.gh.hit { background: var(--ok); border-color: transparent; }
+.goal-edit { align-self: flex-start; }
+
+/* ---------- zayıf noktalar ---------- */
+.dash-stats.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.weak-grp { margin-top: 14px; }
+.weak-grp h3 { font-size: .95rem; margin: 0 0 8px; }
+.weak-grp .rv-meta { white-space: normal; text-align: right; }
+@media (max-width: 640px) { .dash-stats.three { grid-template-columns: 1fr; } }
+.self-card .self-lv .opt { direction: ltr; font-family: var(--f-body); font-size: .98rem; font-weight: 600; padding: 10px 12px; text-align: center; }
+.self-card textarea { direction: ltr; text-align: left; font-family: var(--f-body); font-size: .95rem; line-height: 1.5; }
+
 </style>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
 </head>
@@ -470,6 +608,10 @@ window.GLOSS_OVERRIDES = {
   "علي": "علي_", "عليهما": "على", "لكما": "له", "اذلك": "ذلك", "العلى": "علا_ج", "بجنة": "جنة_كالكان",
   "المر": "مر_اكي", "لاجله": "اجل_سبب", "باياتنا": "اية",
   "فيك": "في", "وولده": "ولد", "وضعفوا": "ضعف", "بناها": "بنى"
+};
+// harekeli biçime göre, tüm kıssalarda geçerli düzeltmeler
+window.GLOSS_VOVERRIDES = {
+  "آخِرُ": "اخر_سون", "آخِرٌ": "اخر_سون", "آخِرُهُ": "اخر_سون", "آخِرِهِ": "اخر_سون", "وَآخِرِهِمْ": "اخر_سون"
 };
 
 </script>
@@ -4528,7 +4670,9 @@ window.GLOSSARY = [
   {f: ["وولد","فولد"], a: "وُلِدَ", t: "doğdu", r: "و ل د"},
   {f: ["بانا"], a: "أَنَّ", t: "ki, -diği", r: "ا ن ن"},
   {f: ["وتاويل"], a: "تَأْوِيلٌ", t: "yorum", r: "ا و ل"},
-  {f: ["وحماستها"], a: "حَمَاسَةٌ", t: "coşku", r: "ح م س"}
+  {f: ["وحماستها"], a: "حَمَاسَةٌ", t: "coşku", r: "ح م س"},
+  // آخِرٌ «son» (GLOSS_VOVERRIDES ile)
+  {f: ["اخر_سون"], a: "آخِرٌ", t: "son, en son gelen", r: "ا خ ر"}
 ];
 
 </script>
@@ -38416,6 +38560,8 @@ window.STORIES.push({
     if (n.length < 2) return -1;
     const VOV = (CUR && CUR.voverrides) || {};           // harekeli biçime göre düzeltme (ör. الْمُلْكُ ≠ الْمَلِكُ)
     if (Object.prototype.hasOwnProperty.call(VOV, tok)) return MAP.has(VOV[tok]) ? MAP.get(VOV[tok]) : -1;
+    const GV = window.GLOSS_VOVERRIDES || {};            // tüm kıssalar için harekeli düzeltmeler (ör. آخِرُ «son» ≠ آخَرُ «başka»)
+    if (Object.prototype.hasOwnProperty.call(GV, tok)) return MAP.has(GV[tok]) ? MAP.get(GV[tok]) : -1;
     const SOV = (CUR && CUR.overrides) || {};            // kıssaya özel düzeltmeler (ör. عَادٌ ≠ عَادَ)
     const ck = (CUR ? CUR.id : "") + "|" + n;
     if (lookCache.has(ck)) return lookCache.get(ck);
@@ -38546,7 +38692,7 @@ window.STORIES.push({
     const e = G[gi];
     document.querySelectorAll(".w.active").forEach((x) => x.classList.remove("active"));
     if (el) el.classList.add("active");
-    popState = { gi, w: el && el.dataset.w ? el.dataset.w : "" };
+    popState = { gi, w: el && el.dataset.w ? el.dataset.w : "", ctx: popCtx(el) };
     renderPop();
     pop.classList.add("show");
   }
@@ -38559,7 +38705,8 @@ window.STORIES.push({
       <div class="row"><button class="icon-btn" data-say="${esc(w || base)}" aria-label="Dinle">🔊</button><div class="ar">${esc(showAr(w || base))}</div></div>
       ${same ? "" : `<div class="base"><span class="lbl">Sözlük biçimi</span><span class="ar-inline">${esc(showAr(base))}</span></div>`}
       <div class="t">${mix(e.t)}</div>
-      ${e.r ? `<button class="more-btn" data-rootshow="1">${S.showRoot ? "Ayrıntıyı gizle ▴" : "Ayrıntı ▾"}</button>${S.showRoot ? `<div class="r">Kök: <span class="ar-inline">${e.r}</span></div>` : ""}` : ""}`;
+      ${e.r ? `<button class="more-btn" data-rootshow="1">${S.showRoot ? "Ayrıntıyı gizle ▴" : "Ayrıntı ▾"}</button>${S.showRoot ? `<div class="r">Kök: <span class="ar-inline">${e.r}</span></div>` : ""}` : ""}
+      <div class="pop-foot">${(S.words || {})[wKey(e)] ? `<button class="star-btn on" data-star="1">★ Defterde</button>` : `<button class="star-btn" data-star="1">☆ Defterime ekle</button>`}</div>`;
   }
   function hidePop() { pop.classList.remove("show"); document.querySelectorAll(".w.active").forEach((x) => x.classList.remove("active")); }
 
@@ -38601,10 +38748,12 @@ window.STORIES.push({
 
   /* ---------------- yönlendirme ---------------- */
   function route(y) {
-    stopAll(); hidePop();
+    stopAll(); hidePop(); renderTop();
     if (play.hash !== location.hash) { play.idx = 0; play.hash = location.hash; }
     const h = location.hash.replace(/^#\/?/, "").split("/");
     const done = () => window.scrollTo(0, y || 0);
+    if (h[0] === "defter") { CUR = null; renderDefter(); window.scrollTo(0, 0); return; }
+    if (h[0] === "calismam") { CUR = null; renderDash(); window.scrollTo(0, 0); return; }
     if (h[0] === "rehber") { CUR = null; renderGuide(); window.scrollTo(0, 0); return; }
     const c = h[0] === "k" && CAT.find((x) => x.id === h[1] && x.status === "ready");
     if (!c) { CUR = null; renderLibrary(); done(); return; }
@@ -38628,6 +38777,7 @@ window.STORIES.push({
     top.innerHTML = `<div class="top-in">
       <a class="brand" href="#/"><span class="kufi">قَصَص</span><b>Kasas</b></a>
       <span class="spacer"></span>
+      <a class="toplink" href="#/calismam">📊 Çalışmam${dueCount() ? `<span class="tl-badge" title="Bekleyen tekrar">${dueCount()}</span>` : ""}</a>
       <a class="toplink" href="#/rehber">Nasıl çalışılır?</a>
     </div>`;
   }
@@ -38641,6 +38791,8 @@ window.STORIES.push({
         <h1>Peygamber kıssalarıyla Arapça okuma</h1>
         <p>Kısa, harekeli ve bol tekrarlı metinlerle okuma. Bir kıssa seç ve başla.</p>
       </section>
+      ${lastHTML(true)}
+      ${dueCount() ? `<a class="resume rv" href="#/calismam"><span>🔁 <b>${dueCount()}</b> ünitenin tekrarı bekliyor</span><span class="go">Tekrarlara git →</span></a>` : ""}
       <div class="lib">${CAT.map((c) => {
         const story = (window.STORIES || []).find((x) => x.id === c.id);
         const cover = `<div class="cover">${c.cover ? `<img src="${esc(c.cover)}" alt="" loading="lazy">` : ""}</div>`;
@@ -38664,6 +38816,501 @@ window.STORIES.push({
     CAT.filter((c) => c.status === "ready" && !(window.STORIES || []).find((x) => x.id === c.id))
       .forEach((c) => loadStory(c.id).then((st) => { if (st && !CUR && !location.hash.startsWith("#/k/")) renderLibrary(); }));
   }
+
+  /* ---------------- tekrar takvimi (3 / 7 / 21 gün) ---------------- */
+  const RV = [3, 7, 21], DAY = 864e5;
+  const dayIdx = (t) => { const d = new Date(t); return Math.round(new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime() / DAY); };
+  // ünitenin tekrar durumu; eski sürümde tamamlanmış üniteler için bugünden başlatılır
+  function rvOf(s) {
+    if (!s || !s.done) return null;
+    if (!s.rv) s.rv = { step: 0, due: s.doneAt ? s.doneAt + RV[0] * DAY : Date.now() };
+    return s.rv;
+  }
+  const isDue = (rv) => rv && rv.step < RV.length && dayIdx(rv.due) <= dayIdx(Date.now());
+  function dueCount() {
+    return Object.keys(S.units).filter((k) => CAT.some((c) => c.status === "ready" && k.startsWith(c.id + ":")) && isDue(rvOf(S.units[k]))).length;
+  }
+  function inDays(t) { const n = dayIdx(t) - dayIdx(Date.now()); return n <= 0 ? "bugün" : n === 1 ? "yarın" : n + " gün sonra"; }
+  function reviewDone(st) {
+    const rv = rvOf(st); if (!rv) return;
+    rv.step++; rv.last = Date.now(); bumpDay(2);
+    rv.due = rv.step < RV.length ? Date.now() + RV[rv.step] * DAY : null;
+    save();
+    toast(rv.step < RV.length ? `Tekrar kaydedildi. Sonraki tekrar ${inDays(rv.due)}.` : "Üç tekrar da tamam. Bu ünite kalıcı oldu!");
+  }
+  function reviewSnooze(st) { const rv = rvOf(st); if (!rv) return; rv.due = Date.now() + DAY; save(); toast("Tekrar yarına ertelendi."); }
+  // ünite sayfasındaki tekrar bandı
+  function rvBanner(u, step) {
+    const st = U(u.id), rv = rvOf(st);
+    if (!isDue(rv)) return "";
+    const late = dayIdx(Date.now()) - dayIdx(rv.due);
+    return `<div class="rv-banner">
+      <div><b>🔁 Tekrar zamanı</b> · ${rv.step + 1}. tekrar (${RV[rv.step]} gün)${late > 0 ? ` · ${late} gün gecikti` : ""}
+      <div class="rv-hint">${step === "read" ? `Metni <b>Kaybolan kelimeler</b> açıkken oku, boşlukları hatırlamaya çalış. Sonra «Okuma sonrası»nda yeniden anlat.` : `Okumayı <b>Kaybolan kelimeler</b> açıkken yap, sonra olayı yeniden anlat.`}</div></div>
+      <div class="cta-row left">
+        ${step !== "read" ? `<a class="btn small" href="${base()}/u/${u.id}/read">Okumaya git</a>` : !S.vanish ? `<button class="btn small" data-rv-vanish="1">Kaybolan kelimeleri aç</button>` : ""}
+        <button class="btn small primary" data-rv-done="1">✓ Tekrarı tamamladım</button>
+        <button class="btn small ghost" data-rv-snooze="1">Yarına ertele</button>
+      </div></div>`;
+  }
+  // çalışmam sayfasındaki tekrar kartı
+  function rvSection(rows) {
+    const due = [], soon = []; let mastered = 0, active = 0;
+    rows.forEach((r) => r.story.units.forEach((u) => {
+      const s = S.units[r.c.id + ":" + u.id]; const rv = rvOf(s); if (!rv) return;
+      if (rv.step >= RV.length) { mastered++; return; }
+      active++;
+      const item = { r, u, rv };
+      if (isDue(rv)) due.push(item); else soon.push(item);
+    }));
+    due.sort((a, b) => a.rv.due - b.rv.due); soon.sort((a, b) => a.rv.due - b.rv.due);
+    const line = ({ r, u, rv }, isD) => {
+      const late = dayIdx(Date.now()) - dayIdx(rv.due);
+      return `<a class="rv-item ${isD ? "due" : ""}" href="#/k/${r.c.id}/u/${u.id}/read">
+        <span><b>${esc(r.c.name_tr)}</b> · Ünite ${u.id}: ${esc(u.title_tr)}</span>
+        <span class="rv-meta">${rv.step + 1}/3 · ${isD ? (late > 0 ? `${late} gün gecikti` : "bugün") : inDays(rv.due)}</span></a>`;
+    };
+    let h = `<section class="card" id="tekrar"><h2>🔁 Tekrar</h2>
+      <p class="sub">Tamamladığın her ünite 3, 7 ve 21 gün sonra tekrar için geri gelir. Tekrarda metni <b>Kaybolan kelimeler</b> ile oku ve olayı yeniden anlat.</p>`;
+    if (!active && !mastered) return h + `<p class="muted small" style="margin:0">Bir üniteyi tamamladığında ilk tekrarı burada görünecek.</p></section>`;
+    h += due.length ? `<div class="rv-list">${due.map((x) => line(x, true)).join("")}</div>` : `<p class="rv-none">✓ Bugün bekleyen tekrar yok.</p>`;
+    if (soon.length) h += `<details class="rv-soon"><summary>Yaklaşan tekrarlar (${soon.length})</summary><div class="rv-list">${soon.slice(0, 12).map((x) => line(x, false)).join("")}</div></details>`;
+    h += `<p class="muted small" style="margin:10px 0 0">${due.length} bekleyen · ${soon.length} planlı · ${mastered} ünite kalıcı (üç tekrar tamam)</p></section>`;
+    return h;
+  }
+
+  /* ---------------- kelime defterim ---------------- */
+  const wKey = (e) => e.a + "|" + (e.r || "");
+  function popCtx(el) {
+    const row = el && el.closest && el.closest(".sent");
+    const unitId = +app.dataset.unit;
+    if (!row || !CUR || !unitId) return null;
+    const u = CUR.units.find((x) => x.id === unitId); if (!u) return null;
+    const key = row.dataset.key, [n, i] = key.split(".").map(Number);
+    const sec = u.sections.find((x) => x.n === n); const pair = sec && sec.s[i];
+    return pair ? { k: CUR.id, u: unitId, key, ar: pair[0], tr: pair[1] } : null;
+  }
+  function toggleWord() {
+    if (!popState) return;
+    const e = G[popState.gi], k = wKey(e);
+    S.words = S.words || {};
+    if (S.words[k]) { delete S.words[k]; toast("Defterden çıkarıldı."); }
+    else {
+      S.words[k] = { a: e.a, t: e.t, r: e.r || "", w: popState.w || "", add: Date.now(), box: 0, ctx: popState.ctx || null };
+      toast("Defterine eklendi. (" + Object.keys(S.words).length + " kelime)");
+    }
+    save(); renderPop();
+    if (location.hash === "#/defter") renderDefter();
+  }
+  let card = null; // kart çalışması: { q: [anahtarlar], i, show, ok, bad }
+  let wq = "", wsort = "new";
+  const storyName = (id) => { const c = CAT.find((x) => x.id === id); return c ? c.name_tr : ""; };
+  const boxDots = (b) => `<span class="w-box" title="Kart kutusu ${b}/4">${[1, 2, 3, 4].map((i) => `<i class="${i <= b ? "on" : ""}"></i>`).join("")}</span>`;
+  function hiWord(ar, w) {
+    const s = esc(showAr(ar)); if (!w) return s;
+    const t = esc(showAr(w)); return t && s.includes(t) ? s.replace(t, `<mark>${t}</mark>`) : s;
+  }
+  function wordsList() {
+    const W = S.words || {};
+    let ks = Object.keys(W);
+    const q = wq.trim();
+    if (q) { const qn = norm(q), ql = q.toLocaleLowerCase("tr"); ks = ks.filter((k) => { const x = W[k]; return (qn && (norm(x.a).includes(qn) || norm(x.w || "").includes(qn))) || x.t.toLocaleLowerCase("tr").includes(ql) || storyName(x.ctx && x.ctx.k).toLocaleLowerCase("tr").includes(ql); }); }
+    if (wsort === "new") ks.sort((a, b) => W[b].add - W[a].add);
+    if (wsort === "box") ks.sort((a, b) => W[a].box - W[b].box || W[a].add - W[b].add);
+    if (wsort === "story") ks.sort((a, b) => (CAT.findIndex((c) => c.id === (W[a].ctx || {}).k) - CAT.findIndex((c) => c.id === (W[b].ctx || {}).k)) || W[a].add - W[b].add);
+    if (!ks.length) return `<p class="muted">${q ? "Aramana uyan kelime yok." : ""}</p>`;
+    return ks.map((k) => { const x = W[k], c = x.ctx;
+      return `<div class="w-item">
+        <div class="w-head"><button class="icon-btn" data-say="${esc(x.a.split(/ ج | \/ | - | \(/)[0])}" aria-label="Dinle">🔊</button>
+          <span class="ar w-ar">${esc(showAr(x.a))}</span>${x.w && norm(x.w) !== norm(x.a.split(/ ج | \/ | - /)[0]) ? `<span class="ar-inline muted">${esc(showAr(x.w))}</span>` : ""}
+          <span class="spacer"></span>${boxDots(x.box)}<button class="icon-btn" data-wdel="${esc(k)}" aria-label="Defterden çıkar" title="Defterden çıkar">×</button></div>
+        <div class="w-tr">${mix(x.t)}${x.r ? ` <span class="muted small">· kök <span class="ar-inline">${esc(x.r)}</span></span>` : ""}</div>
+        ${c ? `<div class="w-ctx"><p class="ar">${hiWord(c.ar, x.w)}</p><div class="w-src"><span>${esc(storyName(c.k))} · Ünite ${c.u}</span><a href="#" data-wgo="${esc(c.k + "|" + c.u + "|" + c.key)}">Metinde gör →</a></div></div>` : ""}
+      </div>`; }).join("");
+  }
+  function cardHTML() {
+    const W = S.words || {};
+    if (card.i >= card.q.length) {
+      return `<section class="card w-card done"><h2>🎉 Kart çalışması bitti</h2>
+        <p class="sub">${card.q.length} kart · <b>${card.ok}</b> bildin · <b>${card.bad}</b> tekrar gerekiyor.</p>
+        <div class="cta-row left"><button class="btn primary" data-cards="1">Yeni tur</button><button class="btn ghost" data-cards-end="1">Deftere dön</button></div></section>`;
+    }
+    const x = W[card.q[card.i]];
+    if (!x) { card.i++; return cardHTML(); }
+    const c = x.ctx;
+    return `<section class="card w-card">
+      <div class="w-card-top"><span class="muted small">Kart ${card.i + 1} / ${card.q.length}</span>${boxDots(x.box)}<button class="btn small ghost" data-cards-end="1">Bitir</button></div>
+      <div class="w-front"><button class="icon-btn" data-say="${esc(x.a.split(/ ج | \/ | - | \(/)[0])}" aria-label="Dinle">🔊</button><span class="ar">${esc(showAr(x.a))}</span></div>
+      ${c ? `<p class="ar w-card-ctx">${hiWord(c.ar, x.w)}</p>` : ""}
+      ${card.show ? `<div class="w-back"><div class="w-tr">${mix(x.t)}</div>${x.r ? `<div class="muted small">Kök: <span class="ar-inline">${esc(x.r)}</span></div>` : ""}${c ? `<div class="muted small" style="margin-top:6px">${esc(c.tr)}</div>` : ""}</div>
+        <div class="cta-row w-grade"><button class="btn" data-grade="0">✗ Bilmedim</button><button class="btn" data-grade="1">≈ Zorlandım</button><button class="btn primary" data-grade="2">✓ Bildim</button></div>`
+      : `<p class="muted small">Anlamını hatırlamaya çalış, sonra kartı çevir.</p><div class="cta-row"><button class="btn primary" data-flip="1">Kartı çevir</button></div>`}
+    </section>`;
+  }
+  function startCards() {
+    const W = S.words || {};
+    const ks = Object.keys(W).sort((a, b) => W[a].box - W[b].box || (W[a].seen || 0) - (W[b].seen || 0));
+    card = { q: ks.slice(0, 20).sort(() => Math.random() - 0.5), i: 0, show: false, ok: 0, bad: 0 };
+  }
+  function gradeCard(g) {
+    const x = (S.words || {})[card.q[card.i]];
+    if (x) { x.seen = Date.now(); x.box = g === 2 ? Math.min(4, x.box + 1) : g === 0 ? 0 : x.box; }
+    if (g === 2) card.ok++; else card.bad++;
+    card.i++; card.show = false;
+    if (card.i >= card.q.length) bumpDay(1);
+    save(); renderDefter();
+  }
+  function wordsCSV() {
+    const W = S.words || {}, q = (s) => '"' + String(s || "").replace(/"/g, '""') + '"';
+    const rows = [["Arapça", "Metindeki biçim", "Türkçe", "Kök", "Kıssa", "Ünite", "Cümle", "Cümle (TR)"]].concat(Object.values(W).map((x) => [x.a, x.w, x.t, x.r, x.ctx ? storyName(x.ctx.k) : "", x.ctx ? x.ctx.u : "", x.ctx ? x.ctx.ar : "", x.ctx ? x.ctx.tr : ""]));
+    const blob = new Blob(["﻿" + rows.map((r) => r.map(q).join(",")).join("\n")], { type: "text/csv;charset=utf-8" });
+    const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "kasas-kelime-defterim-" + today() + ".csv";
+    document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+  }
+  function renderDefter() {
+    app.dataset.unit = "";
+    const n = Object.keys(S.words || {}).length;
+    const learned = Object.values(S.words || {}).filter((x) => x.box >= 4).length;
+    app.innerHTML = `
+      <div class="crumbs"><a href="#/calismam">← Çalışmam</a></div>
+      <section class="hero">
+        <div class="kufi">كَلِمَاتِي</div>
+        <h1>Kelime defterim</h1>
+        <p>${n ? `${n} kelime · ${learned} kelime kartlarda dört kez bilindi.` : "Okurken bir kelimeye dokun ve <b>☆ Defterime ekle</b>'ye bas. Kelime, geçtiği cümleyle birlikte buraya kaydedilir."}</p>
+      </section>
+      ${card ? cardHTML() : ""}
+      ${n ? `<div class="w-tools">
+        <input type="search" placeholder="Ara: Arapça ya da Türkçe" value="${esc(wq)}" data-wq="1" aria-label="Defterde ara">
+        <select data-wsort="1" aria-label="Sırala">${[["new", "Yeni eklenen"], ["story", "Kıssaya göre"], ["box", "Önce zorlar"]].map(([v, t]) => `<option value="${v}" ${wsort === v ? "selected" : ""}>${t}</option>`).join("")}</select>
+        ${card ? "" : `<button class="btn primary" data-cards="1">🃏 Kartlarla çalış</button>`}
+        <button class="btn" data-wcsv="1" title="Excel ya da Anki için">⬇ CSV</button>
+      </div>
+      <div class="w-list" id="wlist">${wordsList()}</div>` : `<section class="card"><h2>Nasıl kullanılır?</h2><ol class="w-how"><li>Bir ünitede okurken bilmediğin kelimeye dokun.</li><li>Açılan kutuda <b>☆ Defterime ekle</b>'ye bas.</li><li>Burada kelimeleri cümleleriyle gör, <b>🃏 Kartlarla çalış</b> ile tekrar et.</li></ol><a class="btn primary" href="#/">Bir kıssa seç →</a></section>`}`;
+  }
+
+  /* ---------------- çalışma takvimi ve seri ---------------- */
+  // S.days[gün] = o günkü etkinlik puanı (ünite adımı +1, tamamlama +2, tekrar +2, kart turu +1)
+  function bumpDay(n) { S.days = S.days || {}; const d = today(); S.days[d] = (+S.days[d] || 0) + n; }
+  const dstr = (dt) => dt.getFullYear() + "-" + String(dt.getMonth() + 1).padStart(2, "0") + "-" + String(dt.getDate()).padStart(2, "0");
+  function streaks() {
+    const D = S.days || {}, has = (dt) => !!D[dstr(dt)];
+    const d = new Date(); let cur = 0;
+    if (!has(d)) d.setDate(d.getDate() - 1);
+    while (has(d)) { cur++; d.setDate(d.getDate() - 1); }
+    const keys = Object.keys(D).filter((k) => D[k]).sort(); let best = 0, run = 0, prev = null;
+    keys.forEach((k) => { const t = new Date(k + "T12:00:00"); run = prev && Math.round((t - prev) / DAY) === 1 ? run + 1 : 1; best = Math.max(best, run); prev = t; });
+    const mon = new Date(); mon.setDate(mon.getDate() - ((mon.getDay() + 6) % 7));
+    let week = 0; for (let i = 0; i < 7; i++) { const t = new Date(mon); t.setDate(mon.getDate() + i); if (has(t)) week++; }
+    return { cur, best, week, total: keys.length, today: has(new Date()) };
+  }
+  function calHTML() {
+    const D = S.days || {}, W = 16;
+    const end = new Date(); const start = new Date(end); start.setDate(end.getDate() - ((end.getDay() + 6) % 7) - (W - 1) * 7);
+    const lvl = (v) => !v ? 0 : v <= 2 ? 1 : v <= 5 ? 2 : v <= 9 ? 3 : 4;
+    let cells = "", months = "", lastM = -1;
+    for (let w = 0; w < W; w++) {
+      const first = new Date(start); first.setDate(start.getDate() + w * 7);
+      const m = first.getMonth();
+      months += `<span>${m !== lastM ? first.toLocaleDateString("tr-TR", { month: "short" }) : ""}</span>`; lastM = m;
+      for (let i = 0; i < 7; i++) {
+        const t = new Date(first); t.setDate(first.getDate() + i);
+        const fut = t > end, v = +D[dstr(t)] || 0;
+        cells += `<span class="c l${fut ? "x" : lvl(v)}${dstr(t) === today() ? " today" : ""}" title="${t.toLocaleDateString("tr-TR", { day: "numeric", month: "long", weekday: "long" })}${fut ? "" : v ? " · çalışıldı" : " · çalışılmadı"}"></span>`;
+      }
+    }
+    return `<div class="cal-wrap"><span></span><div class="cal-months" style="grid-template-columns:repeat(${W},1fr)">${months}</div>
+      <div class="cal-days"><span>Pzt</span><span></span><span>Çar</span><span></span><span>Cum</span><span></span><span>Paz</span></div><div class="cal" style="grid-template-columns:repeat(${W},1fr)">${cells}</div></div>
+      <div class="cal-legend">Az <span class="c l1"></span><span class="c l2"></span><span class="c l3"></span><span class="c l4"></span> Çok</div>`;
+  }
+  function calSection() {
+    const s = streaks();
+    const msg = s.cur === 0 ? "Bugün bir ünite adımı tamamlayarak yeni bir seri başlat."
+      : s.today ? `Harika, bugünü de çalıştın.` : `Bugün de çalışırsan serin ${s.cur + 1} güne çıkar.`;
+    return `<section class="card"><h2>📅 Çalışma takvimi</h2>
+      <div class="dash-stats">
+        <div><b>🔥 ${s.cur}</b><span>günlük seri</span></div>
+        <div><b>${s.best}</b><span>en uzun seri</span></div>
+        <div><b>${s.week}<small>/7</small></b><span>gün bu hafta</span></div>
+        <div><b>${s.total}</b><span>gün toplam</span></div>
+      </div>
+      ${calHTML()}
+      <p class="muted small" style="margin:8px 0 0">${msg} Renk koyulaştıkça o gün daha çok çalışmışsın demektir.</p></section>`;
+  }
+
+  /* ---------------- ünite sonu öz değerlendirme ---------------- */
+  const SELF_LV = [["kolay", "😊 Kolaydı"], ["orta", "🙂 Orta"], ["zor", "😓 Zorlandım"]];
+  const canDos = (u) => [
+    "Olayları Arapça kısaca anlatabilirim.",
+    "Metindeki yeni kelimelerin çoğunu tanıyorum.",
+    `Bu ünitenin dil konusunu bir örnekle açıklayabilirim: <i>${esc(u.post.focus.title.split(":")[0])}</i>.`
+  ];
+  function selfHTML(u) {
+    const st = U(u.id), sf = st.self || {};
+    const cd = canDos(u);
+    return `<div class="card self-card">
+      <h2>🪞 Kendini değerlendir <span class="tag">isteğe bağlı</span></h2>
+      <p class="sub">Bu ünite senin için nasıldı? Cevapların yalnızca sende kalır; Çalışmam sayfasındaki «Zayıf noktalar» bölümünü besler.</p>
+      <div class="self-lv">${SELF_LV.map(([k, t]) => `<button class="opt ${sf.lv === k ? "sel" : ""}" data-self-lv="${k}">${t}</button>`).join("")}</div>
+      <div class="self-can">${cd.map((t, i) => `<label><input type="checkbox" data-self-can="${i}" ${sf.can && sf.can[i] ? "checked" : ""}> <span>${t}</span></label>`).join("")}</div>
+      <textarea data-self-note="1" placeholder="Kendine bir not (isteğe bağlı): ör. «kaybolan kelimelerle bir kez daha okumalıyım»">${esc(sf.note || "")}</textarea>
+    </div>`;
+  }
+  function selfSet(u, patch) { const st = U(u.id); st.self = Object.assign({ can: [false, false, false] }, st.self || {}, patch, { at: Date.now() }); save(); }
+
+  /* ---------------- haftalık hedef ---------------- */
+  const weekStart = (t) => { const d = new Date(t); d.setHours(0, 0, 0, 0); d.setDate(d.getDate() - ((d.getDay() + 6) % 7)); return d.getTime(); };
+  function weekProgress(ws, type) {
+    const we = ws + 7 * DAY;
+    if (type === "days") { let n = 0; for (let i = 0; i < 7; i++) { const t = new Date(ws + i * DAY + 12 * 3600e3); if ((S.days || {})[dstr(t)]) n++; } return n; }
+    return Object.values(S.units).filter((x) => x && x.doneAt >= ws && x.doneAt < we).length;
+  }
+  function ring(p) {
+    const r = 34, c = 2 * Math.PI * r, v = Math.min(1, p);
+    return `<svg class="ring" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="${r}" class="ring-bg"/><circle cx="40" cy="40" r="${r}" class="ring-fg ${v >= 1 ? "full" : ""}" stroke-dasharray="${(c * v).toFixed(1)} ${c.toFixed(1)}" transform="rotate(-90 40 40)"/></svg>`;
+  }
+  let goalEdit = false;
+  function goalSection() {
+    const G0 = S.goal;
+    const head = `<h2>🎯 Haftalık hedef</h2>`;
+    if (!G0 || goalEdit) {
+      const g = G0 || { type: "units", n: 3 };
+      return `<section class="card" id="hedef">${head}
+        <p class="sub">Haftalık bir hedef koy; ilerlemen her pazartesi sıfırlanır. Küçük ama düzenli bir hedef daha kolay sürer.</p>
+        <div class="goal-form">
+          <label>Hedef türü <select data-goal-type="1"><option value="units" ${g.type === "units" ? "selected" : ""}>Tamamlanan ünite</option><option value="days" ${g.type === "days" ? "selected" : ""}>Çalışılan gün</option></select></label>
+          <label>Haftada <span class="stepper"><button class="btn small" data-goal-n="-1" aria-label="Azalt">−</button><b id="goalN">${g.n}</b><button class="btn small" data-goal-n="1" aria-label="Artır">+</button></span></label>
+        </div>
+        <div class="cta-row left"><button class="btn primary" data-goal-save="1">Hedefi kaydet</button>${G0 ? `<button class="btn ghost" data-goal-cancel="1">Vazgeç</button><button class="btn ghost" data-goal-off="1">Hedefi kaldır</button>` : ""}</div>
+      </section>`;
+    }
+    const ws = weekStart(Date.now()), have = weekProgress(ws, G0.type), unit = G0.type === "days" ? "gün" : "ünite";
+    const left = Math.max(0, G0.n - have);
+    const daysLeft = 7 - ((new Date().getDay() + 6) % 7);
+    const hist = [];
+    for (let w = 8; w >= 1; w--) { const s0 = ws - w * 7 * DAY; const v = weekProgress(s0, G0.type); hist.push(`<span class="gh ${v >= G0.n ? "hit" : v ? "part" : ""}" title="${new Date(s0).toLocaleDateString("tr-TR", { day: "numeric", month: "short" })} haftası: ${v}/${G0.n} ${unit}"></span>`); }
+    return `<section class="card" id="hedef">${head}
+      <div class="goal-row">${ring(have / G0.n)}<div class="goal-txt">
+        <div class="goal-big"><b>${have}</b> / ${G0.n} ${unit}</div>
+        <div class="muted small">${left ? `Hedefe ${left} ${unit} kaldı · haftanın bitmesine ${daysLeft} gün var.` : "🎉 Bu haftanın hedefi tamam!"}</div>
+        <div class="goal-hist"><span class="muted small">Son 8 hafta</span>${hist.join("")}</div>
+      </div><button class="btn small ghost goal-edit" data-goal-edit="1">Değiştir</button></div>
+      <p class="muted small" style="margin:6px 0 0">${G0.type === "units" ? "Bu hafta tamamladığın üniteler sayılır («Üniteyi tamamla ✓»)." : "En az bir ünite adımı açtığın, tekrar ya da kart çalıştığın günler sayılır."}</p>
+    </section>`;
+  }
+  let goalDraft = null;
+
+  /* ---------------- zayıf noktalar ---------------- */
+  function firstTry(st, prefix, list) {
+    const tries = st.tries || {}; let ans = 0, ok = 0;
+    list.forEach((q, i) => { const id = prefix + i; if (st.ans[id] === undefined) return; ans++; if (st.ans[id] === q.a && !(tries[id] || []).length) ok++; });
+    return { ans, ok, n: list.length };
+  }
+  function weakSection(rows) {
+    const comp = [], gram = [], hard = [], cant = [];
+    let cA = 0, cO = 0, gA = 0, gO = 0;
+    rows.forEach((r) => r.story.units.forEach((u) => {
+      const st = S.units[r.c.id + ":" + u.id]; if (!st || !st.ans) return;
+      const href = `#/k/${r.c.id}/u/${u.id}/post`, name = `${esc(r.c.name_tr)} · Ünite ${u.id}`;
+      const q = firstTry(st, "q", u.post.questions); cA += q.ans; cO += q.ok;
+      if (q.ans >= 3 && q.ok / q.ans < 0.7) comp.push({ href, name, txt: `${q.ok}/${q.ans} ilk denemede`, v: q.ok / q.ans });
+      const f = firstTry(st, "f", u.post.focus.items || []); gA += f.ans; gO += f.ok;
+      if (f.ans >= 2 && f.ok / f.ans < 0.75) gram.push({ href, name, txt: `<i>${esc(u.post.focus.title)}</i> · ${f.ok}/${f.ans}`, v: f.ok / f.ans });
+      const sf = st.self;
+      if (sf && sf.lv === "zor") hard.push({ href, name, txt: esc(u.title_tr) + (sf.note ? ` · «${esc(sf.note.slice(0, 60))}»` : "") });
+      if (sf && sf.can && sf.at && sf.can.some((x) => !x)) {
+        const miss = canDos(u).map((t, i) => (sf.can[i] ? null : ["anlatma", "kelimeler", "dil konusu"][i])).filter(Boolean);
+        cant.push({ href, name, txt: "Henüz emin değilsin: " + miss.join(", ") });
+      }
+    }));
+    const W = S.words || {}, hardW = Object.values(W).filter((x) => x.seen && x.box === 0).length;
+    const nothing = !cA && !gA && !hard.length && !cant.length && !hardW;
+    const list = (title, arr, empty) => `<div class="weak-grp"><h3>${title}</h3>${arr.length ? `<div class="rv-list">${arr.sort((a, b) => (a.v ?? 0) - (b.v ?? 0)).slice(0, 6).map((x) => `<a class="rv-item" href="${x.href}"><span><b>${x.name}</b></span><span class="rv-meta">${x.txt}</span></a>`).join("")}</div>` : `<p class="muted small" style="margin:0">${empty}</p>`}</div>`;
+    const pct = (o, a) => a ? Math.round((o / a) * 100) + "%" : "–";
+    if (nothing) return `<section class="card" id="zayif"><h2>🧭 Zayıf noktalar</h2><p class="sub" style="margin:0">Okuma sonrası sorularını cevapladıkça ve üniteleri değerlendirdikçe burada sana özel bir liste oluşacak.</p></section>`;
+    return `<section class="card" id="zayif"><h2>🧭 Zayıf noktalar</h2>
+      <p class="sub">Cevaplarına ve kendi değerlendirmene göre en çok yarar sağlayacak tekrarlar. Bir satıra dokununca ünitenin «Okuma sonrası» adımı açılır.</p>
+      <div class="dash-stats three"><div><b>${pct(cO, cA)}</b><span>anlama sorularında ilk denemede doğru (${cA} soru)</span></div><div><b>${pct(gO, gA)}</b><span>dil odağında ilk denemede doğru (${gA} soru)</span></div><div><b>${hardW}</b><span>kartta «bilmedim» dediğin kelime</span></div></div>
+      ${list("📖 Anlamada zorlandığın üniteler", comp, "İlk denemede %70'in altında kalan ünite yok.")}
+      ${list("🔍 Tekrar etmen gereken dil konuları", gram, "Dil odağı alıştırmalarında belirgin bir zorluk görünmüyor.")}
+      ${hard.length ? list("😓 «Zorlandım» dediğin üniteler", hard, "") : ""}
+      ${cant.length ? list("🪞 Kendini henüz hazır hissetmediğin yerler", cant, "") : ""}
+      ${hardW ? `<div class="cta-row left"><a class="btn" href="#/defter" data-cards-go="1">🃏 Zor kelimelerle kart çalış</a></div>` : ""}
+    </section>`;
+  }
+
+  /* ---------------- çalışmam (kişisel takip) ---------------- */
+  const STEP_TR = { pre: "Okuma öncesi", read: "Okuma", post: "Okuma sonrası" };
+  const today = () => { const d = new Date(); return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); };
+  function fmtWhen(t) {
+    if (!t) return "";
+    const d = new Date(t), days = Math.floor((new Date(today()) - new Date(new Date(t).toDateString())) / 864e5);
+    const rel = days <= 0 ? "bugün" : days === 1 ? "dün" : days + " gün önce";
+    return d.toLocaleDateString("tr-TR", { day: "numeric", month: "long" }) + " · " + rel;
+  }
+  function track(story, u, step) {
+    const st = U(u.id, story), now = Date.now();
+    st.lastAt = now; st.lastStep = step;
+    S.last = { k: story.id, u: u.id, step, t: now };
+    const ek = story.id + ":" + u.id + ":" + step;
+    if (!S.dayKeys || S.dayKeys.d !== today()) S.dayKeys = { d: today(), k: [] };
+    if (!S.dayKeys.k.includes(ek)) { S.dayKeys.k.push(ek); bumpDay(1); }
+    save();
+  }
+  // bir kıssanın özeti (durumu değiştirmeden okur)
+  function storyStats(story) {
+    const us = story.units.map((u) => ({ u, s: S.units[story.id + ":" + u.id] || {} }));
+    const done = us.filter((x) => x.s.done).length, started = us.filter((x) => x.s.started && !x.s.done).length;
+    const next = us.find((x) => x.s.started && !x.s.done) || us.find((x) => !x.s.done);
+    const last = Math.max(0, ...us.map((x) => x.s.lastAt || 0));
+    return { total: us.length, done, started, next: next && next.u, last };
+  }
+  function lastHTML(compact) {
+    const L = S.last, c = L && CAT.find((x) => x.id === L.k);
+    const story = c && (window.STORIES || []).find((x) => x.id === L.k);
+    const u = story && story.units.find((x) => x.id == L.u);
+    if (!u) return "";
+    const href = `#/k/${L.k}/u/${u.id}/${L.step || "pre"}`;
+    if (compact) return `<a class="resume" href="${href}"><span>▶ Kaldığın yer: <b>${esc(c.name_tr)}</b> · Ünite ${u.id} · ${STEP_TR[L.step] || ""}</span><span class="go">Devam et →</span></a>`;
+    const done = (S.units[L.k + ":" + u.id] || {}).done;
+    return `<div class="dash-last">
+        ${c.cover ? `<img src="${esc(c.cover)}" alt="">` : ""}
+        <div><div class="muted small">${esc(fmtWhen(L.t))}</div>
+          <div class="dl-title">${esc(c.name_tr)} · Ünite ${u.id}: ${esc(u.title_tr)}</div>
+          <div class="muted small">${STEP_TR[L.step] || ""}${done ? " · ✓ tamamlandı" : ""}</div></div>
+      </div>
+      <a class="btn primary" href="${href}">Kaldığın yerden devam et →</a>`;
+  }
+  function backupData() {
+    return { app: "kasas", version: 1, savedAt: new Date().toISOString(), data: S };
+  }
+  function countDone(data) { return Object.values((data && data.units) || {}).filter((x) => x && x.done).length; }
+  let pendingImport = null;
+
+  function renderDash() {
+    app.dataset.unit = "";
+    const ready = CAT.filter((c) => c.status === "ready");
+    const missing = ready.filter((c) => !(window.STORIES || []).find((x) => x.id === c.id));
+    if (missing.length) {
+      app.innerHTML = `<div class="crumbs"><a href="#/">← Kıssalar</a></div><p class="muted">Yükleniyor…</p>`;
+      Promise.all(missing.map((c) => loadStory(c.id))).then(() => { if (location.hash === "#/calismam") renderDash(); });
+      return;
+    }
+    const rows = ready.map((c) => ({ c, story: (window.STORIES || []).find((x) => x.id === c.id) })).filter((r) => r.story)
+      .map((r) => ({ ...r, ...storyStats(r.story) }));
+    const T = rows.reduce((a, r) => a + r.total, 0), D = rows.reduce((a, r) => a + r.done, 0), P = rows.reduce((a, r) => a + r.started, 0);
+    const begun = rows.filter((r) => r.done || r.started).length;
+    const days = Object.keys(S.days || {}).length;
+    const pct = T ? Math.round((D / T) * 100) : 0;
+    const hasAny = D || P || S.last;
+    const lb = S.lastBackup ? Math.floor((Date.now() - S.lastBackup) / 864e5) : null;
+    const warn = hasAny && (lb === null || lb >= 14)
+      ? `<p class="dash-warn">${lb === null ? "Henüz hiç yedek almadın." : `Son yedeğin ${lb} gün önce.`} İlerlemen yalnızca bu tarayıcıda duruyor; bir yedek indirmeni öneririm.</p>` : "";
+    const sorted = rows.slice().sort((a, b) => (b.last - a.last) || 0);
+    app.innerHTML = `
+      <div class="crumbs"><a href="#/">← Kıssalar</a></div>
+      <section class="hero">
+        <div class="kufi">دَفْتَرِي</div>
+        <h1>Çalışmam</h1>
+        <p>Neleri çalıştığın, nerede kaldığın ve sırada ne olduğu. Bilgiler yalnızca bu tarayıcıda saklanır.</p>
+      </section>
+
+      <section class="card">
+        <h2>📍 Kaldığın yer</h2>
+        ${lastHTML(false) || `<p class="sub">Henüz bir üniteye başlamadın.</p><a class="btn primary" href="#/">Bir kıssa seç →</a>`}
+      </section>
+
+      ${rvSection(rows)}
+
+      ${goalSection()}
+
+      ${calSection()}
+
+      ${weakSection(rows)}
+
+      <section class="card">
+        <h2>📊 Genel durum</h2>
+        <div class="dash-stats">
+          <div><b>${D}</b><span>/ ${T} ünite tamamlandı</span></div>
+          <div><b>${P}</b><span>ünite devam ediyor</span></div>
+          <div><b>${begun}</b><span>/ ${rows.length} kıssaya başlandı</span></div>
+          <div><b>${days}</b><span>gün çalışıldı</span></div>
+        </div>
+        <div class="progress big" aria-label="Genel ilerleme %${pct}"><span style="width:${pct}%"></span></div>
+        <p class="muted small" style="margin:6px 0 0">Kitabın %${pct}'i tamamlandı.${S.last ? " Son çalışma: " + esc(fmtWhen(S.last.t)) + "." : ""}</p>
+      </section>
+
+      <section class="card">
+        <h2>📒 Kelime defterim</h2>
+        ${(() => { const W = S.words || {}, n = Object.keys(W).length, l = Object.values(W).filter((x) => x.box >= 4).length;
+          return n ? `<p class="sub"><b>${n}</b> kelime kayıtlı · ${l} tanesi kartlarda dört kez bilindi.</p><div class="cta-row left"><a class="btn primary" href="#/defter" data-cards-go="1">🃏 Kartlarla çalış</a><a class="btn" href="#/defter">Defteri aç</a></div>`
+            : `<p class="sub">Okurken bir kelimeye dokun ve <b>☆ Defterime ekle</b>'ye bas; kelime geçtiği cümleyle birlikte burada toplanır.</p><a class="btn" href="#/defter">Defteri aç</a>`; })()}
+      </section>
+
+      <section class="card">
+        <h2>📚 Kıssalar</h2>
+        <p class="sub">En son çalıştığın kıssa en üstte. Satırdaki bağlantı seni sıradaki üniteye götürür.</p>
+        <div class="dash-rows">${sorted.map((r) => {
+          const p = Math.round((r.done / r.total) * 100);
+          const status = r.done === r.total ? `<span class="badge">✓ Tamamlandı</span>`
+            : r.done ? `<span class="badge gold">${r.done}/${r.total}</span>` : r.started ? `<span class="badge gold">Devam ediyor</span>` : `<span class="badge muted">Başlanmadı</span>`;
+          const link = r.done === r.total ? `<a href="#/k/${r.c.id}">Kıssaya git</a>`
+            : `<a href="#/k/${r.c.id}/u/${r.next.id}/pre">${r.done || r.started ? "Sıradaki" : "Başla"}: Ünite ${r.next.id} →</a>`;
+          return `<div class="dash-row">
+            <div class="dr-name"><b>${esc(r.c.name_tr)}</b> <span class="kufi">${esc(r.c.name_ar)}</span>${status}</div>
+            <div class="progress"><span style="width:${p}%"></span></div>
+            <div class="dr-meta"><span>${r.done}/${r.total} ünite${r.last ? " · " + esc(fmtWhen(r.last)) : ""}</span>${link}</div>
+          </div>`;
+        }).join("")}</div>
+      </section>
+
+      <section class="card" id="yedek">
+        <h2>💾 Yedekle ve taşı</h2>
+        <p class="sub">İlerlemen bu cihazdaki tarayıcıda saklanır. Tarayıcı verilerini silersen ya da başka bir cihaza geçersen kaybolur. Bir yedek dosyası indir; başka bir cihazda ya da tarayıcıda «Yedekten yükle» ile geri getir.</p>
+        ${warn}
+        <div class="cta-row left">
+          <button class="btn primary" data-export="1">⬇ İlerlemeyi indir</button>
+          <label class="btn">⬆ Yedekten yükle<input type="file" accept=".json,application/json" data-import="1" hidden></label>
+        </div>
+        ${S.lastBackup ? `<p class="muted small" style="margin:8px 0 0">Son yedek: ${esc(fmtWhen(S.lastBackup))}</p>` : ""}
+        ${pendingImport ? `<div class="dash-import">
+          <p><b>Yedek dosyası okundu.</b> ${pendingImport.savedAt ? esc(fmtWhen(Date.parse(pendingImport.savedAt))) + " tarihli; " : ""}${countDone(pendingImport.data)} ünite tamamlanmış görünüyor (şu an bu tarayıcıda: ${countDone(S)}).</p>
+          <p class="muted small">Yüklersen bu tarayıcıdaki ilerlemenin yerine geçer. Emin değilsen önce mevcut ilerlemeni indir.</p>
+          <div class="cta-row left"><button class="btn primary" data-import-go="1">Yedeği yükle</button><button class="btn ghost" data-import-cancel="1">Vazgeç</button></div>
+        </div>` : ""}
+      </section>`;
+  }
+  function doExport() {
+    S.lastBackup = Date.now(); save();
+    const blob = new Blob([JSON.stringify(backupData(), null, 1)], { type: "application/json" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob); a.download = "kasas-ilerleme-" + today() + ".json";
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+    toast("Yedek dosyası indirildi.");
+    renderDash();
+  }
+  function readImport(file) {
+    const r = new FileReader();
+    r.onload = () => {
+      try {
+        const j = JSON.parse(r.result);
+        const data = j && j.app === "kasas" && j.data ? j.data : j && j.units ? j : null;
+        if (!data || typeof data.units !== "object") throw 0;
+        pendingImport = { savedAt: j.savedAt || null, data };
+      } catch (e) { pendingImport = null; toast("Bu dosya bir Kasas yedeği değil."); }
+      renderDash();
+    };
+    r.readAsText(file);
+  }
+  function doImport() {
+    if (!pendingImport) return;
+    S = Object.assign({}, DEF, pendingImport.data);
+    S.lastBackup = Date.now();
+    pendingImport = null; save(); applyFontSafe();
+    toast("İlerleme yüklendi.");
+    renderDash();
+  }
+  function applyFontSafe() { try { if (typeof applyFont === "function") applyFont(); } catch (e) {} }
 
   /* ---------------- çalışma rehberi ---------------- */
   function renderGuide() {
@@ -38713,7 +39360,9 @@ window.STORIES.push({
             <li><b>📚 Ek çalışmalar:</b> 🔍 Dil odağı (ünitenin dilbilgisi konusu), ✍️ Özeti tamamla, 💭 Düşün.</li>
             <li><b>✨ İsteğe bağlı:</b> 🙋 Metin sana soruyor (kendi hayatınla ilgili kısa bir Arapça cevap) ve 📖 Kur'an bağlantısı.</li></ul></li>
           <li><div class="g-step-h"><b>4 · Bitir</b></div>
-            <ul><li><b>Üniteyi tamamla ✓</b> düğmesine bas. Kıssa sayfasında ilerlemen görünür.</li></ul></li>
+            <ul><li><b>🪞 Kendini değerlendir</b> (isteğe bağlı): ünitenin kolay mı zor mu olduğunu işaretle; Çalışmam sayfasındaki «Zayıf noktalar» buna göre öneri yapar.</li><li><b>Üniteyi tamamla ✓</b> düğmesine bas. İlerlemen <a href="#/calismam">📊 Çalışmam</a> sayfasında görünür.</li></ul></li>
+          <li><div class="g-step-h"><b>5 · Tekrar</b><span class="g-time">≈ 10 dk</span></div>
+            <ul><li>Tamamladığın ünite <b>3, 7 ve 21 gün sonra</b> tekrar için geri gelir; bekleyen tekrarlar Çalışmam sayfasında ve ünitenin üstünde 🔁 bandıyla görünür.</li><li>Tekrarda metni <b>Kaybolan kelimeler</b> açıkken oku, olayı yeniden anlat ve «✓ Tekrarı tamamladım»a bas.</li></ul></li>
         </ol>
       </section>
 
@@ -38721,6 +39370,7 @@ window.STORIES.push({
         <h2>🛠️ Okuma araçları</h2>
         <div class="g-table" role="table">
           <div role="row"><span role="cell"><b>Kelimeye dokun</b></span><span role="cell">Kelimenin anlamı ve sözlük biçimi; «Ayrıntı» altında kökü. 🔊 ile kelimeyi dinlersin.</span></div>
+          <div role="row"><span role="cell"><b>☆ Defterime ekle</b></span><span role="cell">Kelime kutusundaki bu düğme kelimeyi, geçtiği cümleyle birlikte <a href="#/defter">📒 Kelime defterim</a>e kaydeder. Defterde kartlarla tekrar edebilir, listeyi CSV olarak indirebilirsin.</span></div>
           <div role="row"><span role="cell"><b>▶ / TR</b></span><span role="cell">Cümlenin yanındaki ▶ o cümleyi okur; TR Türkçesini gösterir.</span></div>
           <div role="row"><span role="cell"><b>Hareke açık / kapalı</b></span><span role="cell">Harekeleri gizler. Seviye ilerledikçe kapalı okumaya geç.</span></div>
           <div role="row"><span role="cell"><b>Kaybolan kelimeler</b></span><span role="cell">İkinci okuma için: bazı kelimeler boşluk olur (Az / Orta / Çok). Boşluğa bir kez dokun → Türkçe ipucu, bir kez daha → Arapça kelime.</span></div>
@@ -38744,11 +39394,11 @@ window.STORIES.push({
         <h2>📅 Haftalık plan örnekleri</h2>
         <div class="g-grid">
           <div class="g-box"><h3>Hafif tempo <small>haftada 3 gün</small></h3>
-            <ul><li><b>1. gün:</b> Yeni ünite (tamamı).</li><li><b>2. gün:</b> Yeni ünite (tamamı).</li><li><b>3. gün:</b> Tekrar: iki üniteyi <b>Kaybolan kelimeler</b> ile yeniden oku ve yeniden anlat.</li></ul></div>
+            <ul><li><b>1. gün:</b> Yeni ünite (tamamı).</li><li><b>2. gün:</b> Yeni ünite (tamamı).</li><li><b>3. gün:</b> Bekleyen 🔁 tekrarları yap; kalan vakitte önceki iki üniteyi yeniden anlat.</li></ul></div>
           <div class="g-box"><h3>Düzenli tempo <small>haftada 5–6 gün</small></h3>
             <ul><li><b>Her gün:</b> Bir oturumda okuma öncesi + okuma, ertesi gün okuma sonrası + yeni ünitenin okuma öncesi.</li><li><b>Hafta sonu:</b> Haftanın ünitelerini sesli oku; anahtar kelimeleri defterine yaz.</li></ul></div>
         </div>
-        <p class="g-note">Kısa ama düzenli çalışmak, seyrek ve uzun çalışmaktan daha verimlidir. Aynı metni yeniden okumak, yeni bir metne geçmek kadar öğreticidir.</p>
+        <p class="g-note">Kendine uygun planı <a href="#/calismam">📊 Çalışmam</a> sayfasında <b>🎯 Haftalık hedef</b> olarak kaydedebilirsin (haftada kaç ünite ya da kaç gün). Kısa ama düzenli çalışmak, seyrek ve uzun çalışmaktan daha verimlidir. Aynı metni yeniden okumak, yeni bir metne geçmek kadar öğreticidir.</p>
       </section>
 
       <section class="card g-sec" id="g-ogretmen">
@@ -38768,7 +39418,7 @@ window.STORIES.push({
           <li>Her kelimeye bakma; önce cümlenin bağlamından tahmin et.</li>
           <li>Çeviri son çare olsun. Bir cümleyi kendin çözmek, çevirisini okumaktan çok daha kalıcıdır.</li>
           <li>Sesli oku. Dinleyip tekrar etmek telaffuzu ve akıcılığı birlikte geliştirir.</li>
-          <li>Bir kelime defteri tut: kelimeyi, kökünü ve geçtiği cümleyi yaz (ör. ${ar("صَبَرَ")}, kökü: ${ar("ص ب ر")}).</li>
+          <li>Kelime defteri tut: önemli kelimeleri <b>☆ Defterime ekle</b> ile kaydet ve haftada birkaç kez kartlarla tekrar et. Kökü de not et (ör. ${ar("صَبَرَ")}, kökü: ${ar("ص ب ر")}).</li>
           <li>Takıldığın bir ünitede ilerlemeye zorlama; bir gün sonra yeniden oku.</li>
         </ul>
       </section>
@@ -38803,7 +39453,7 @@ window.STORIES.push({
           <div class="uc-top"><span class="num">Ünite ${u.id}</span><span class="emo" aria-hidden="true">${u.emoji}</span></div>
           <div class="ar">${esc(showAr(u.title_ar))}</div>
           <div class="tr">${esc(u.title_tr)}</div>
-          <div class="meta">Bölüm ${range} · ${u.sections.reduce((n, s) => n + s.s.length, 0)} cümle ${st.done ? '<span class="badge">✓ Tamamlandı</span>' : st.started ? '<span class="badge gold">Devam ediyor</span>' : ""}</div>
+          <div class="meta">Bölüm ${range} · ${u.sections.reduce((n, s) => n + s.s.length, 0)} cümle ${st.done && isDue(rvOf(st)) ? '<span class="badge gold">🔁 Tekrar zamanı</span>' : st.done ? '<span class="badge">✓ Tamamlandı</span>' : st.started ? '<span class="badge gold">Devam ediyor</span>' : ""}</div>
         </a>`;
       }).join("")}</div>`;
   }
@@ -38812,6 +39462,7 @@ window.STORIES.push({
   function renderUnit(u, step) {
     const st = U(u.id);
     if (!st.started) { st.started = true; save(); }
+    track(CUR, u, step);
     const range = u.sections.length > 1 ? `${u.sections[0].n}–${u.sections[u.sections.length - 1].n}` : `${u.sections[0].n}`;
     const tabs = [["pre", "1 · Okuma öncesi", "Tahmin, kelimeler"], ["read", "2 · Okuma", `Bölüm ${range}`], ["post", "3 · Okuma sonrası", "Anlama, dil"]];
     let body = "";
@@ -38822,6 +39473,7 @@ window.STORIES.push({
       <div class="crumbs"><a href="#/">Kıssalar</a> / <a href="${base()}">${esc(CUR.title_tr)}</a></div>
       <div class="uhead"><span class="emo">${u.emoji}</span><div><div class="ar">${esc(showAr(u.title_ar))}</div><div class="tr">Ünite ${u.id} · ${esc(u.title_tr)}</div></div></div>
       <nav class="steps">${tabs.map(([k, t, s]) => `<a href="${base()}/u/${u.id}/${k}" class="${k === step ? "on" : ""}">${t}<small>${s}</small></a>`).join("")}</nav>
+      ${rvBanner(u, step)}
       ${body}`;
     app.dataset.unit = u.id;
     if (step === "read") { updateVoiceWarn(); updatePlayBtn(); }
@@ -39075,6 +39727,7 @@ window.STORIES.push({
     h += moreHTML("opt", "✨ İsteğe bağlı", (p.personal ? "Metin sana soruyor · " : "") + "Kur'an bağlantısı", opt, st);
 
     const next = CUR.units.find((x) => x.id === u.id + 1);
+    h += selfHTML(u);
     h += `<div class="cta-row" style="margin-top:18px">
       ${CONFIG.feedbackUrl ? `<a class="btn ghost" href="${esc(CONFIG.feedbackUrl)}" target="_blank" rel="noopener" style="text-decoration:none">Geri bildirim ver</a>` : ""}
       <button class="btn primary" data-finish="${u.id}">${st.done ? "✓ Tamamlandı" : "Üniteyi tamamla ✓"}</button>
@@ -39125,6 +39778,27 @@ window.STORIES.push({
     { const g = d('a[href^="#g-"]'); if (g) { ev.preventDefault(); const x = document.getElementById(g.getAttribute("href").slice(1)); if (x) x.scrollIntoView({ behavior: "smooth", block: "start" }); return; } }
     let el;
 
+    if ((el = d("[data-self-lv]")) && u) { selfSet(u, { lv: el.dataset.selfLv }); rerender(true); return; }
+    if ((el = d("[data-goal-edit]"))) { goalEdit = true; goalDraft = Object.assign({}, S.goal); renderDash(); return; }
+    if ((el = d("[data-goal-n]"))) { goalDraft = goalDraft || Object.assign({ type: "units", n: 3 }, S.goal || {}); goalDraft.n = Math.max(1, Math.min(goalDraft.type === "days" ? 7 : 30, goalDraft.n + +el.dataset.goalN)); const b = document.getElementById("goalN"); if (b) b.textContent = goalDraft.n; return; }
+    if ((el = d("[data-goal-save]"))) { const g = goalDraft || { type: "units", n: 3 }; S.goal = { type: g.type, n: g.n, set: Date.now() }; goalEdit = false; goalDraft = null; save(); toast("Haftalık hedef kaydedildi."); renderDash(); return; }
+    if ((el = d("[data-goal-cancel]"))) { goalEdit = false; goalDraft = null; renderDash(); return; }
+    if ((el = d("[data-goal-off]"))) { delete S.goal; goalEdit = false; goalDraft = null; save(); renderDash(); return; }
+    if ((el = d("[data-star]"))) { ev.stopPropagation(); toggleWord(); return; }
+    if ((el = d("[data-wdel]"))) { delete (S.words || {})[el.dataset.wdel]; save(); renderDefter(); return; }
+    if ((el = d("[data-wgo]"))) { ev.preventDefault(); const [k, uu, key] = el.dataset.wgo.split("|"); pendingGoto = key; location.hash = `#/k/${k}/u/${uu}/read`; return; }
+    if ((el = d("[data-cards-go]"))) { startCards(); return; }
+    if ((el = d("[data-cards]"))) { startCards(); renderDefter(); window.scrollTo(0, 0); return; }
+    if ((el = d("[data-cards-end]"))) { card = null; renderDefter(); return; }
+    if ((el = d("[data-flip]"))) { card.show = true; renderDefter(); return; }
+    if ((el = d("[data-grade]"))) { gradeCard(+el.dataset.grade); return; }
+    if ((el = d("[data-wcsv]"))) { wordsCSV(); return; }
+    if ((el = d("[data-rv-done]")) && st) { reviewDone(st); renderTop(); rerender(true); return; }
+    if ((el = d("[data-rv-snooze]")) && st) { reviewSnooze(st); renderTop(); rerender(true); return; }
+    if ((el = d("[data-rv-vanish]"))) { S.vanish = "orta"; save(); rerender(true); return; }
+    if ((el = d("[data-export]"))) { doExport(); return; }
+    if ((el = d("[data-import-go]"))) { doImport(); return; }
+    if ((el = d("[data-import-cancel]"))) { pendingImport = null; renderDash(); return; }
     if ((el = d("[data-say]"))) { ev.stopPropagation(); speak(el.dataset.say); return; }
     if ((el = d(".pop .x"))) { hidePop(); return; }
     if ((el = d("[data-rootshow]"))) { S.showRoot = !S.showRoot; save(); renderPop(); return; }
@@ -39211,12 +39885,16 @@ window.STORIES.push({
     if ((el = d("[data-order-check]"))) { st.orderChecked = true; save(); rerender(true); return; }
 
     if ((el = d("[data-cz-check]"))) { st.clozeChecked = true; save(); rerender(true); return; }
-    if ((el = d("[data-finish]"))) { st.done = true; save(); toast("Ünite tamamlandı. Tebrikler!"); rerender(true); return; }
+    if ((el = d("[data-finish]"))) { st.done = true; st.doneAt = Date.now(); bumpDay(2); if (!st.rv) st.rv = { step: 0, due: st.doneAt + RV[0] * DAY }; save(); toast("Ünite tamamlandı. Tebrikler!"); rerender(true); return; }
   });
 
   document.addEventListener("change", (ev) => {
+    if (ev.target.matches && ev.target.matches("[data-import]")) { const f = ev.target.files && ev.target.files[0]; if (f) readImport(f); ev.target.value = ""; return; }
     const t = ev.target;
     const unitId = +app.dataset.unit;
+    if (t.matches("[data-goal-type]")) { goalDraft = goalDraft || Object.assign({ type: "units", n: 3 }, S.goal || {}); goalDraft.type = t.value; if (t.value === "days") goalDraft.n = Math.min(goalDraft.n, 7); const b = document.getElementById("goalN"); if (b) b.textContent = goalDraft.n; return; }
+    if (t.matches("[data-self-can]") && app.dataset.unit) { const u = CUR.units.find((x) => x.id === +app.dataset.unit); const st = U(u.id); const can = ((st.self && st.self.can) || [false, false, false]).slice(); can[+t.dataset.selfCan] = t.checked; selfSet(u, { can }); return; }
+    if (t.matches("[data-wsort]")) { wsort = t.value; renderDefter(); return; }
     if (t.matches("[data-rate]")) { S.rate = +t.value; save(); return; }
     if (t.matches("[data-vanish]")) { S.vanish = t.value || false; save(); rerender(true); return; }
     if (t.matches("[data-cz]") && unitId) {
@@ -39230,6 +39908,8 @@ window.STORIES.push({
   }, true);
   document.addEventListener("input", (ev) => {
     const t = ev.target;
+    if (t.matches("[data-self-note]") && app.dataset.unit) { const u = CUR.units.find((x) => x.id === +app.dataset.unit); selfSet(u, { note: t.value }); return; }
+    if (t.matches("[data-wq]")) { wq = t.value; const l = document.getElementById("wlist"); if (l) l.innerHTML = wordsList(); return; }
     if (t.matches("[data-note]") && app.dataset.unit) { U(+app.dataset.unit).notes[t.dataset.note] = t.value; save(); }
   });
   document.addEventListener("keydown", (ev) => {
